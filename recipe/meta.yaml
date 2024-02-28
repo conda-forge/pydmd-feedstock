@@ -1,4 +1,4 @@
-{% set name = "PyDMD" %}
+{% set name = "pydmd" %}
 {% set version = "1.0.0" %}
 
 package:
