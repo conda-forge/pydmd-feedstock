@@ -40,7 +40,7 @@ about:
   home: https://github.com/mathLab/PyDMD
   summary: Python Dynamic Mode Decomposition.
   license: MIT
-  license_file: LICENSE.rst
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
