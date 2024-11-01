@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
   sha256: 5a14fb5432a21d7b37818fe387bf7bf97584ae97f9de5aeda34d24855eb04100
 
 build:
