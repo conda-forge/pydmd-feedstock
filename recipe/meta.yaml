@@ -1,13 +1,13 @@
 {% set name = "pydmd" %}
-{% set version = "1.0.1" %}
+{% set version = "2024.11.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
-  sha256: 18d66b1d09a2e7f6556e1c4862cefb46186747c737c6f1e9b3b3bb4efd25a83d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
+  sha256: 5a14fb5432a21d7b37818fe387bf7bf97584ae97f9de5aeda34d24855eb04100
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - setuptools
     - pip
   run:
+    - typing_extensions >=4.7.0
     - h5netcdf
     - xarray
     - python >=3.7
