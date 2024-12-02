@@ -1,5 +1,5 @@
 {% set name = "pydmd" %}
-{% set version = "2024.11.1" %}
+{% set version = "2024.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
-  sha256: 5a14fb5432a21d7b37818fe387bf7bf97584ae97f9de5aeda34d24855eb04100
+  sha256: bcd4ca7520a0e9cee7750d3110afddb906bd14b17b72e4f4d08a63deb09d9e5c
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
+    - python >={{ python_min }}
     - typing_extensions >=4.7.0
     - h5netcdf
     - xarray
-    - python >=3.7
     - numpy <2
     - scipy >=1.6.0
     - matplotlib-base
@@ -35,6 +35,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
