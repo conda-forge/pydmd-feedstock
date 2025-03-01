@@ -1,5 +1,5 @@
 {% set name = "pydmd" %}
-{% set version = "2025.2.1" %}
+{% set version = "2025.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
-  sha256: 533e574ae6b49358cc4dbf1226c9251b9d95547896ba09c43af20df7c460f36c
+  sha256: 8f6a71edbf31f8bf091e882578def2420e3a43c93423971adbdbc6050ec7a3cf
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - typing_extensions >=4.7.0
     - h5netcdf
     - xarray
-    - numpy <2
+    - numpy
     - scipy >=1.6.0
     - matplotlib-base
     - scikit-learn
