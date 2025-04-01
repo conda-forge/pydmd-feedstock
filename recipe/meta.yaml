@@ -1,5 +1,5 @@
 {% set name = "pydmd" %}
-{% set version = "2025.3.1" %}
+{% set version = "2025.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydmd-{{ version }}.tar.gz
-  sha256: 8f6a71edbf31f8bf091e882578def2420e3a43c93423971adbdbc6050ec7a3cf
+  sha256: a3b5babc891f1938a01e00fd6649fe80b25225e845c0a5ce1c7a94117239cfec
 
 build:
   noarch: python
